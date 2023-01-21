@@ -27,9 +27,25 @@
         </div>
         {%endfor%}
         {%endif%}
+        
+        {%if form.errors%}
+        <div class="col">
+                <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-8">
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <strong>{{form.errors}}</strong>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                      </div>
+                        </div>
+                        <div class="col-2"></div>
+                </div>
+        </div>
+        {%endif%}
         <div class="signup-container">
                 <div class="signup-form">
-                  <form>
+                  <form method="post">
+                        {%csrf_token%}
                     <h1>Join Here</h1>
                     <label for="id_username">Username</label>
                     <input type="text" id="id_username" class="input-field" name="username">
