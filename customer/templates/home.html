@@ -1,12 +1,64 @@
 <!DOCTYPE html>
+{%load static%}
 <html lang="en">
 <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="{%static 'css/homestyle.css'%}">
 </head>
 <body>
-        <h1>Welcome</h1>
+        <header>
+                <nav>
+                    <a href="#" class="logo">OLX</a>
+                    <ul>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Post Ad</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Log In</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="hero">
+                <h1>Buy and Sell Anything</h1>
+                <form>
+                    <input type="text" placeholder="Search for products, brands and more">
+                    <button>Search</button>
+                </form>
+            </section>
+            <section class="categories">
+                <h2>Popular Categories</h2>
+                <ul>
+                    <li><a href="#">Cars</a></li>
+                    <li><a href="#">Mobiles</a></li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Real Estate</a></li>
+                    <li><a href="#">Jobs</a></li>
+                </ul>
+            </section>
+            <section class="featured-ads">
+                <h2>Featured Ads</h2>
+                <ul>
+                    <li>
+                        <img src="car1.jpg" alt="Car 1">
+                        <h3>2010 Toyota Corolla</h3>
+                        <p>$8,000</p>
+                    </li>
+                    <li>
+                        <img src="mobile1.jpg" alt="Mobile 1">
+                        <h3>iPhone 12 Pro Max</h3>
+                        <p>$1,200</p>
+                    </li>
+                    <li>
+                        <img src="laptop1.jpg" alt="Laptop 1">
+                        <h3>MacBook Pro 2020</h3>
+                        <p>$2,500</p>
+                    </li>
+                </ul>
+            </section>
+            <footer>
+                <p>Copyright © OLX</p>
+            </footer>
 </body>
 </html>
